@@ -39,14 +39,13 @@ export default function Sidebar() {
   return (
     <Flex
       pos='sticky'
-      left='5'
+      left='0'
       h='95vh'
-      marginTop='2.5vh'
+      marginTop='0'
       boxShadow='0 4px 12px 0 rgba(0, 0, 0, 0.05)'
       borderRadius={navSize == "small" ? "15px" : "30px"}
       w={navSize == "small" ? "75px" : "200px"}
       flexDir='column'
-      justifyContent='space-between'
       justifyContent='space-between'
       transition='0.5s ease all'>
       <Flex flexDir='column' w='100%' alignItems='left' as='nav'>

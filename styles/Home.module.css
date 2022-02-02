@@ -1,30 +1,83 @@
 .container {
-  padding: 0 2rem;
+  background: linear-gradient(to bottom, #152c3e, #37618a);
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  height: 300vh;
+}
+.banner {
+  z-index: 2;
+  transform: scale(1.2);
+  position: fixed;
+  top: -2%;
+  left: 33.5%;
+}
+.base {
+  position: fixed;
+  bottom: 0px;
+  z-index: 2;
+}
+.stars {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  opacity: 0;
 }
 
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.camp {
+  z-index: 3;
+  position: fixed;
+  right: 30%;
+  bottom: 0px;
 }
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.mount {
+  z-index: 1;
+  position: fixed;
+  bottom: 0px;
+  left: 0%;
 }
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  text-align: center;
+.trees1,
+.trees2,
+.trees3 {
+  transform: scale(1.5);
+  position: fixed;
+  bottom: 0px;
+  z-index: 2;
 }
-
-
-
-
+.trees1 {
+  left: 0%;
+  bottom: -40px;
+}
+.trees2 {
+  left: 15%;
+}
+.trees3 {
+  right: 15%;
+}
+.hills {
+  position: fixed;
+  bottom: -53%;
+  z-index: 1;
+  left: -8%;
+}
+.cloud1 {
+  top: 20%;
+  right: 10%;
+  position: fixed;
+  animation: bounce 2s ease-in-out 0s infinite alternate;
+}
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-4px);
+  }
+}
+.cloud2 {
+  top: 20%;
+  left: 10%;
+  position: fixed;
+  animation: bounce 3.5s ease-in-out 2s infinite alternate;
+}
